@@ -6,6 +6,8 @@
 
 package com.myapp.struts;
 
+import com.struts.model.PollOwner;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.struts.action.ActionForm;
@@ -20,6 +22,7 @@ public class UserAction extends org.apache.struts.action.Action {
 
     /* forward name="success" path="" */
     private static final String SUCCESS = "success";
+    List<PollOwner> pollOnwer;
 
     /**
      * This is the action called from the Struts framework.
